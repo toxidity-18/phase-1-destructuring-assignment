@@ -1,3 +1,4 @@
+
 const farmAnimals = 'cow horse sheep pig chicken';
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
@@ -46,3 +47,47 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+// Animal sounds (assuming an object or array)
+const animalSounds = {
+  cow: "moo",
+  horse: "neigh",
+  sheep: "baa",
+  pig: "oink",
+  chicken: "cluck"
+};
+
+
+const traditionalAnimalNames = {
+  cow: "Bessie",
+  sheep: "Dolly",
+  pig: "Babe",
+  chicken: "Little"
+};
+
+const traditionalAnimalColors = {
+  cow: "blackAndWhite",
+  sheep: "black",
+  pig: "pink"
+};
+
+
+const rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+const missPiggy = {
+  name: "Miss Piggy",
+  color: "pink",
+  song: "Never Before, Never Again",
+  job: "Cast member of The Muppet Show",
+  partner: "Kermit"
+};
+
+const { cow: moo, horse: neigh, ...otherSounds } = animalSounds;
+const { cow: bessie, sheep: dolly, ...otherNames } = traditionalAnimalNames;
+const { cow: blackAndWhite, sheep: black, ...otherColors } = traditionalAnimalColors; 
+const [red, orange, yellow, green, blue, indigo, violet] = rainbowColors; 
+const [r, o, y, g, b, , v] = rainbowColors;
+const { indg: indigoFromObj } = { indg: "indigo" };
+
+const { name: muppetName, color, song, job, partner } = missPiggy; 
+const { song: song2, song: [, , song4] } = { song: ["Rainbow Connection", "Moving Right Along", "I Hope That Something Better Comes Along"] }; 
+const { job: nestedJob, partner: nestedPartner } = missPiggy.partner; 
