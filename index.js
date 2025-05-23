@@ -30,7 +30,12 @@ const {ham,hotDog}=doggie.favoriteFoods.meats
 
 // applying destructuring method on arrays 
 const dogs = ['Great Pyrenees','Pug','Bull Mastiff']
-const [medium , small , giant]= dogs 
+const [medium , small , giant]= dogs
+
+// String.prototype.split() this will turn the string into an array 
+const dogName = 'Sir wood barksalot'
+const [title,firstName,lastName] = dogName.split(' ')
+
 
 
 const farmAnimals = 'cow horse sheep pig chicken';
