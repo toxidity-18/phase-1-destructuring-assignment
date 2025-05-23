@@ -28,6 +28,9 @@ const doggie = {
 };
 const {ham,hotDog}=doggie.favoriteFoods.meats 
 
+// applying destructuring method on arrays 
+const dogs = ['Great Pyrenees','Pug','Bull Mastiff']
+const [medium , small , giant]= dogs 
 
 
 const farmAnimals = 'cow horse sheep pig chicken';
