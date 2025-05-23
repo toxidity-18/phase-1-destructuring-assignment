@@ -1,14 +1,33 @@
 // learning 
+// const doggie = {
+//     name: 'Buzz',
+//   breed: 'Great Pyrenees',
+//   furColor: 'black and white',
+//   activityLevel: 'sloth-like',
+//   favoriteFood: 'hot dogs'
+// }
+// const {name,breed} = doggie     // {} around the variable names tell js that it will be pulling values from an object 
+// name 
+// breed 
+// testing it with nested data structures 
+
 const doggie = {
-    name: 'Buzz',
+  name: 'Buzz',
   breed: 'Great Pyrenees',
   furColor: 'black and white',
   activityLevel: 'sloth-like',
-  favoriteFood: 'hot dogs'
-}
-const {name,breed} = doggie 
-name 
-breed 
+  favoriteFoods: {
+    meats:{
+      ham: 'smoked',
+      hotDog: 'Oscar Meyer',
+    },
+    cheeses:{
+      american: 'kraft'
+    }
+  }
+};
+const {ham,hotDog}=doggie.favoriteFoods.meats 
+
 
 
 const farmAnimals = 'cow horse sheep pig chicken';
