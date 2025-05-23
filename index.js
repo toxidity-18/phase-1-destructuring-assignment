@@ -1,3 +1,15 @@
+// learning 
+const doggie = {
+    name: 'Buzz',
+  breed: 'Great Pyrenees',
+  furColor: 'black and white',
+  activityLevel: 'sloth-like',
+  favoriteFood: 'hot dogs'
+}
+const {name,breed} = doggie 
+name 
+breed 
+
 
 const farmAnimals = 'cow horse sheep pig chicken';
 
